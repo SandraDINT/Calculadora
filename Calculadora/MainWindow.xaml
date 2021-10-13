@@ -14,15 +14,146 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <!--Pantalla calculadora-->
-        <Border BorderBrush="Black" 
+        <Border BorderBrush="Black"
                 BorderThickness="1"
                 Margin="5">
             <Viewbox>
-                <TextBlock Grid.Row="0"
-                           Text="Prueba" />
+                <TextBlock x:Name="textBlockPantalla"
+                           HorizontalAlignment="Right"
+                    Grid.Row="0"/>
             </Viewbox>
         </Border>
-        
-        
+        <!--Números-->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    Margin="5">
+                <Button Click="Button_Click"
+                        Tag="1">
+                    <Viewbox>
+                        <TextBlock Text="1" />
+                    </Viewbox>
+                </Button>
+            </Border>
+
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    Margin="5"
+                    Grid.Column="1">
+                <Button Tag="2"
+                        Click="Button_Click">
+                    <Viewbox>
+                        <TextBlock Text="2" />
+                    </Viewbox>
+                </Button>
+            </Border>
+
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    Margin="5"
+                    Grid.Column="2">
+                <Button Grid.Column="2"
+                        Tag="3"
+                        Click="Button_Click">
+                    <Viewbox>
+                        <TextBlock Text="3" />
+                    </Viewbox>
+                </Button>
+            </Border>
+
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    Margin="5"
+                    Grid.Row="1">
+                <Button Tag="5"
+                        Click="Button_Click">
+                    <Viewbox>
+                        <TextBlock Text="4" />
+                    </Viewbox>
+                </Button>
+            </Border>
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    Margin="5"
+                    Grid.Row="1"
+                    Grid.Column="1">
+                <Button Tag="5"
+                        Click="Button_Click">
+                    <Viewbox>
+                        <TextBlock Text="5" />
+                    </Viewbox>
+                </Button>
+            </Border>
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    Margin="5"
+                    Grid.Row="1"
+                    Grid.Column="2">
+                <Button Tag="6"
+                        Click="Button_Click">
+                    <Viewbox>
+                        <TextBlock Text="6" />
+                    </Viewbox>
+                </Button>
+            </Border>
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    Margin="5"
+                    Grid.Row="2">
+                <Button Tag="7"
+                        Click="Button_Click">
+                    <Viewbox>
+                        <TextBlock Text="7" />
+                    </Viewbox>
+                </Button>
+            </Border>
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    Margin="5"
+                    Grid.Row="2"
+                    Grid.Column="1">
+                <Button Tag="8"
+                        Click="Button_Click">
+                    <Viewbox>
+                        <TextBlock Text="8" />
+                    </Viewbox>
+                </Button>
+            </Border>
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    Margin="5"
+                    Grid.Row="2"
+                    Grid.Column="2">
+                <Button Tag="9"
+                        Click="Button_Click">
+                    <Viewbox>
+                        <TextBlock Text="9" />
+                    </Viewbox>
+                </Button>
+            </Border>
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    Margin="5"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="3">
+                <Button Tag="0"
+                        Click="Button_Click">
+                    <Viewbox>
+                        <TextBlock Text="0" />
+                    </Viewbox>
+                </Button>
+            </Border>
+        </Grid>
     </Grid>
 </Window>
